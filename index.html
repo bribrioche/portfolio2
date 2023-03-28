@@ -1,0 +1,369 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Bryan Guillot</title>
+  <script src="functions.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="functions.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+  <sectio class="nav" style="position: relative; z-index: 1;">
+    <h1>Bryan Guillot</h1>
+    <h3 class="span loader"><span class="m">I</span><span class="m">T</span><span class="m">&nbsp;</span><span
+        class="m">E</span><span class="m">n</span><span class="m">g</span><span class="m">i</span><span
+        class="m">n</span><span class="m">e</span><span class="m">e</span><span class="m">r</span></h3>
+    <div class="imgIcons">
+      <div class="tooltip"><img src="images/Unity.png" class="icon">
+        <p class="tooltiptext">Unity</p>
+      </div>
+      <div class="tooltip"><img src="images/Unreal.png" class="icon">
+        <p class="tooltiptext">Unreal Engine</p>
+      </div>
+      <div class="tooltip"><img src="images/angular.png" class="icon">
+        <p class="tooltiptext">Angular</p>
+      </div>
+      <div class="tooltip"><img src="images/RN.png" class="icon">
+        <p class="tooltiptext">React Native</p>
+      </div>
+      <div class="tooltip"><img src="images/AndroidStudio.png" class="icon">
+        <p class="tooltiptext">Android Studio</p>
+      </div>
+      <div class="tooltip"><img src="images/Wp.png" class="icon">
+        <p class="tooltiptext">Wordpress</p>
+      </div>
+      <div class="tooltip"><img src="images/figma.png" class="icon">
+        <p class="tooltiptext">Figma</p>
+      </div>
+      <div class="tooltip"><img src="images/github.png" class="icon">
+        <p class="tooltiptext">Github</p>
+      </div>
+
+    </div>
+    <div class="nav-container">
+      <a class="nav-tab" href="#" data-target="tab-education">
+        <div class="hover-underline-animation">EDUCATION</div>
+      </a>
+      <a class="nav-tab" href="#" data-target="tab-work">
+        <div class="hover-underline-animation">WORK EXPERIENCES</div>
+      </a>
+      <a class="nav-tab" href="#" data-target="tab-school">
+        <div class="hover-underline-animation">SCHOOL PROJECTS
+        </div>
+      </a>
+      <a class="nav-tab" href="#" data-target="tab-personnal">
+        <div class="hover-underline-animation">PERSONNAL PROJECTS</div>
+      </a>
+      <span class="nav-tab-slider"></span>
+    </div>
+    <script>
+      // Sélectionnez tous les éléments avec la classe 'nav-tab'
+      const navTabs = document.querySelectorAll('.nav-tab');
+
+      // Écoutez l'événement de clic sur chaque élément de la navbar
+      navTabs.forEach((navTab) => {
+        navTab.addEventListener('click', (event) => {
+          event.preventDefault(); // empêcher le comportement par défaut du lien
+          const targetId = navTab.dataset.target; // obtenir l'ID de la section cible
+          const target = document.querySelector(`#${targetId}`); // sélectionner l'élément cible
+          target.scrollIntoView({ behavior: 'smooth' }); // défilement en douceur jusqu'à l'élément cible
+        });
+      });
+    </script>
+    <canvas id="threejs-container" class="threejs-container"></canvas>
+    </div>
+  </sectio>
+  <main class="main">
+    <section class="slider" id="tab-education">
+      <br>
+      <h1>EDUCATION</h1>
+      <img src="images/Education.png" class="fullImg" />
+    </section>
+
+
+
+    <section class="slider" id="tab-work">
+      <h1>WORK EXPERIENCES</h1>
+      <br><br>
+
+      <div class="wrap-cards">
+        <div class="card">
+          <img src="images/seasonnalWork.png" alt="Avatar" class="imgCard">
+          <div class="containerCard">
+            <p class="txtCard">Seasonal Work</p>
+          </div>
+          <div class="overlay">
+            <p>- Temporary work at&nbsp;<b>Valéo</b> La Suze, France (2017 & 2020)<br><br>
+              - Seasonal work extra at <b>Bières é Chopes</b> Le Mans, France (2019)<br><br>
+              - Temporary work at <b>MPO M'PACK</b> La Suze, France (2019)<br><br>
+              - fixed-term contract at <b>ESPRI RESTAURATION</b> Roézé-sur-Sarthe, France (2018)</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/9Internship2018.png" alt="Avatar" class="imgCard">
+          <div class="containerCard">
+            <p class="txtCard">Internsip (2018)</p>
+          </div>
+          <div class="overlay">
+            <p>5 weeks at&nbsp<b>Coclico</b>Le Mans, France (Web Design company) Personalized menu project on a
+              website
+              already present (2018)</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/Internship2018.png" alt="Avatar" class="imgCard">
+          <div class="containerCard">
+            <p class="txtCard">Internsip (2019)</p>
+          </div>
+          <div class="overlay">
+            <p>6 weeks at&nbsp;<b>the MJC Ronceray</b>Le Mans, France. Application project for the cultural season
+              (2019)
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/biyaku.png" alt="Avatar" class="imgCard">
+          <div class="containerCard">
+            <p class="txtCard">Self-employement
+              (Since 2021)</p>
+          </div>
+          <div class="overlay">
+            <p><b>Biyaku</b>Since April 2021 <br>
+              Graphic design, mockup and web design
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/RetailVR.png" alt="Avatar" class="imgCard">
+          <div class="containerCard">
+            <p class="txtCard">End-of-degree
+              internship
+              (2022)</p>
+          </div>
+          <div class="overlay">
+            <p><b>RetailVR</b>
+              March to August 2022<br>
+              Development of a 3D environment creation software with Unity
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/RetailVR.png" alt="Avatar" class="imgCard">
+          <div class="containerCard">
+            <p class="txtCard">Permanent contract
+              (Since 2022)</p>
+          </div>
+          <div class="overlay">
+            <p><b>RetailVR</b>
+              August 2022 to now<br>
+              3D environment development with Unity
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="slider" id="tab-school">
+      <h1>SCHOOL PROJECTS</h1>
+      <div class="slide-container">
+        <div class="custom-slider fade">
+          <div class="slide-index">1 / 4</div><img class="slide-img" src="images/AVR2.png">
+          <div class="containerSlider">
+            <div class="slide-text"><b>AVR2</b> is a project using Virtual Reality (VR) and Augmented Reality (AR).
+              It allows a player with a virtual reality headset to play cooperatively with a player with a tablet. It
+              was developed under Unreal Engine 4.</div>
+          </div>
+
+        </div>
+        <div class="custom-slider fade">
+          <div class="slide-index">2 / 4</div><img class="slide-img" src="images/VRGame.png">
+          <div class="containerSlider">
+            <div class="slide-text">This game is a virtual reality shooter. This project was developed under Unreal
+              Engine 4 to learn how to develop on this 3D engine.</div>
+          </div>
+
+        </div>
+        <div class="custom-slider fade">
+          <div class="slide-index">3 / 4</div>
+          <img class="slide-img" src="images/MetarTaf.png">
+          <div class="containerSlider">
+            <div class="slide-text"><b>MetarTaf</b> is an application for airline pilots who want to prepare their
+              flight. This
+              project was developed with Android Studio and the model with Figma.</div>
+          </div>
+        </div>
+        <div class="custom-slider fade">
+          <div class="slide-index">4 / 4</div>
+          <img class="slide-img" src="images/paratge.png">
+          <div class="containerSlider">
+            <div class="slide-text"><b>Partage</b> is a social network aimed at sharing works between artists. This
+              project was
+              developed with the Ionic framework and the model of the application, with Figma.</div>
+          </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <div class="slide-dot">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </section>
+
+    <script>var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("custom-slider");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+    <section class="slider" id="tab-personnal">
+      <h1>PERSONNAL PROJECTS</h1>
+      <div class="slide-container">
+        <div class="custom-slider2 fade">
+          <div class="slide-index2">1 / 4</div><img class="slide-img" src="images/AntiGaspi.png">
+          <div class="containerSlider">
+            <div class="slide-text"><b>AntiGaspi</b> aims to fight against food waste. It is an application that helps
+              people to better preserve their fruits and vegetables and know how long a product is consumable after date
+              of conservation. This project is developed with React Native. Currently unavailable in stores.</div>
+          </div>
+
+        </div>
+        <div class="custom-slider2 fade">
+          <div class="slide-index2">2 / 4</div><img class="slide-img" src="images/biyakuAE.png">
+          <div class="containerSlider">
+            <div class="slide-text">Since April 2021, I have been self-employed and I do graphic design, layout and web
+              design in my free time. I created the website <a href="https://www.fimpro.fr"
+                target="_blank">fimpro.fr</a>, <a href="https://maportegarage.fr/" target="_blank">maportegarage.fr</a>
+              and <a href="https://www.lacanneasucre.com" target="_blank">lacanneasucre.com</a>.</div>
+          </div>
+
+        </div>
+        <div class="custom-slider2 fade">
+          <div class="slide-index2">3 / 4</div>
+          <img class="slide-img" src="images/vetements.png">
+          <div class="containerSlider">
+            <div class="slide-text">In 2021 and 2022, I created clothes. I drew the designs, created the sales site,
+              managed supplier orders (2021) and printing (2022), managed stocks and distribution.</div>
+          </div>
+        </div>
+        <div class="custom-slider2 fade">
+          <div class="slide-index2">4 / 4</div>
+          <img class="slide-img" src="images/Feuille.png">
+          <div class="containerSlider">
+            <div class="slide-text">I made covers, posters and other designs for the music group <a
+                href="https://open.spotify.com/artist/1bwjDtHqoKuTaSskgk41vd" target="_blank">Feuille</a>. The designs
+              were made in Photoshop and Illustrator.</div>
+          </div>
+        </div>
+
+        <a class="prev2" onclick="plusSlides2(-1)">❮</a>
+        <a class="next2" onclick="plusSlides2(1)">❯</a>
+      </div>
+      <div class="slide-dot2">
+        <span class="dot2" onclick="currentSlide2(1)"></span>
+        <span class="dot2" onclick="currentSlide2(2)"></span>
+        <span class="dot2" onclick="currentSlide2(3)"></span>
+        <span class="dot2" onclick="currentSlide2(4)"></span>
+      </div>
+    </section>
+    <script>var slideIndex = 1;
+      showSlides2(slideIndex);
+
+      function plusSlides2(n) {
+        showSlides2((slideIndex += n));
+      }
+
+      function currentSlide2(n) {
+        showSlides2((slideIndex = n));
+      }
+
+      function showSlides2(n) {
+        var i;
+        var slides = document.getElementsByClassName("custom-slider2");
+        var dots = document.getElementsByClassName("dot2");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </main>
+  <button class="btn-back-to-top" title="Retour en haut">
+    <?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M24 6V42" stroke="#faebd7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 18L24 6L36 18" stroke="#faebd7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+  <script>
+    const btnBackToTop = document.querySelector('.btn-back-to-top');
+
+    // Écoutez l'événement de défilement (scroll) de la page
+    window.addEventListener('scroll', () => {
+      // Si l'utilisateur a fait défiler la page au-delà de la première section
+      if (window.scrollY > document.querySelector('#tab-education').offsetTop) {
+        btnBackToTop.classList.add('show-btn-back-to-top'); // Afficher le bouton de retour en haut
+      } else {
+        btnBackToTop.classList.remove('show-btn-back-to-top'); // Masquer le bouton de retour en haut
+      }
+    });
+
+    // Écoutez l'événement de clic sur le bouton de retour en haut
+    btnBackToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Faire défiler la page jusqu'en haut avec un effet de défilement en douceur
+    });
+  </script>
+
+  <canvas class="background"></canvas>
+</body>
+
+</html>
